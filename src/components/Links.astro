@@ -1,3 +1,22 @@
+---
+import { log } from "astro/dist/core/logger/core";
+
+function getArgentinaDateTime() {
+  try {
+    const date = new Date().toLocaleTimeString("en-US", {
+      timeZone: "America/Argentina/Buenos_Aires",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      weekday: "short",
+    });
+    return `${date} (UTC-3)`;
+  } catch (error) {
+    return "Error getting date.";
+  }
+}
+---
+
 <ul class="text-gray-300 text-sm">
   <li class="flex items-center">
     <svg
@@ -33,8 +52,8 @@
       >
       </path>
     </svg>
-    <a href="https://time.is/UTC-3" target="_blank" class="ml-2"
-      >Sat 03:09 (UTC-3)</a
+    <a href="https://time.is/UTC-3" target="_blank" class="ml-2 normal-case"
+      >{getArgentinaDateTime()}</a
     >
   </li>
   <li class="flex items-center mt-1">
