@@ -1,21 +1,30 @@
 import Head from 'next/head'
-import { AppShell, createStyles, Flex, Footer, Header, Text } from '@mantine/core'
+import { AppShell, createStyles, Flex, Footer, Group, Header, Text } from '@mantine/core'
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   container: {
-    height: 45,
     display: "flex",
     maxWidth: "768px",
     boxSizing: 'border-box',
     marginLeft: 'auto',
     marginRight: 'auto',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   test: {
     background: '#0d1117',
     height: '100vh%'
 
-  }
+  },
+  link: {
+    textDecoration: 'none',
+    color: theme.colors.dark[0],
+    fontSize: theme.fontSizes.sm,
+    fontWeight: 'bold',
+    '&:hover': {
+      color: theme.colors.dark[2],
+    },
+  },
 }));
 
 export default function Home() {
@@ -30,18 +39,31 @@ export default function Home() {
       </Head>
       <AppShell
         padding="md" className={classes.container}
-        header={<Header height={45} className={classes.container} p="xs">{/* Header content */}</Header>}
-        footer={<Footer height={45} className={classes.container} >{
-          <Flex h={45} align="center">
-            <Text size='xs' px='sm'>Copyright © 2021-2023 Puntogris </Text>
+        header={
+          <Header height={55} className={classes.container} py="xs">{
+
+            <Group h={55}>
+              <Link key={""} href={""} className={classes.link}>
+                  Home
+              </Link>
+              <Link key={""} href={""} className={classes.link}>
+                  Projects
+              </Link>
+
+            </Group>
+
+          }</Header>}
+        footer={<Footer height={55} className={classes.container} >{
+          <Flex h={55} align="center">
+            <Text c="dimmed" size='sm' px='sm'>Copyright © 2021-2023 Puntogris </Text>
           </Flex>
         }</Footer>}
         styles={(theme) => ({
-          main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0] },
+          main: { backgroundColor: '#0d1117'},
         })}
       >
         {
-      
+
 
         }
       </AppShell>
