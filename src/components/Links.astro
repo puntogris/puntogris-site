@@ -1,10 +1,14 @@
 ---
-async function getArgentinaDateTime() {
+function getArgentinaDateTime() {
   try {
-    const response = await fetch("http://worldtimeapi.org/api/timezone/America/Argentina/Salta")
-    const json = await response.json()
-    const date = json["utc_datetime"]
-    return date
+    const date = new Date().toLocaleTimeString("en-US", {
+      timeZone: "America/Argentina/Buenos_Aires",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      weekday: "short",
+    });
+    return `${date} (UTC-3)`;
   } catch (error) {
     return "Error getting date.";
   }
@@ -12,6 +16,7 @@ async function getArgentinaDateTime() {
 ---
 
 <ul class="text-gray-300 text-sm">
+  <p class="text-gray-300 text-sm">{getArgentinaDateTime()}</p>
   <li class="flex items-center">
     <svg
       aria-hidden="true"
