@@ -1,16 +1,10 @@
 ---
-import { log } from "astro/dist/core/logger/core";
-
-function getArgentinaDateTime() {
+async function getArgentinaDateTime() {
   try {
-    const date = new Date().toLocaleTimeString("en-US", {
-      timeZone: "America/Argentina/Buenos_Aires",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-      weekday: "short",
-    });
-    return `${date} (UTC-3)`;
+    const response = await fetch("http://worldtimeapi.org/api/timezone/America/Argentina/Salta")
+    const json = await response.json()
+    const date = json["utc_datetime"]
+    return date
   } catch (error) {
     return "Error getting date.";
   }
