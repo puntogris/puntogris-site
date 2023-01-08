@@ -3,7 +3,7 @@ export default async function getPinnedRepos() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer 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",
+      "Authorization": `Bearer ${GITHUB_TOKEN}`,
     },
     body: JSON.stringify({
       query: `
@@ -32,5 +32,7 @@ export default async function getPinnedRepos() {
   });
 
   const json = await response.json();
-  return json.data.repositoryOwner.itemShowcase.items.edges.map((repo) => repo.node.name);
+  return json.data.repositoryOwner.itemShowcase.items.edges.map(
+    (repo) => repo.node.name
+  );
 }
