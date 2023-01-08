@@ -1,12 +1,13 @@
 export default async function getPinnedRepos() {
-  const response = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${import.meta.env.GITHUB_TOKEN}`,
-    },
-    body: JSON.stringify({
-      query: `
+  try {
+    const response = await fetch("https://api.github.com/graphql", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${import.meta.env.GITHUB_TOKEN}`,
+      },
+      body: JSON.stringify({
+        query: `
         query {
           repositoryOwner(login: "puntogris") {
             ... on ProfileOwner {
@@ -28,11 +29,14 @@ export default async function getPinnedRepos() {
           }
         }
         `,
-    }),
-  });
+      }),
+    });
 
-  const json = await response.json();
-  return json.data.repositoryOwner.itemShowcase.items.edges.map(
-    (repo) => repo.node.name
-  );
+    const json = await response.json();
+    return json.data.repositoryOwner.itemShowcase.items.edges.map(
+      (repo) => repo.node.name
+    );
+  } catch (error) {
+    return [];
+  }
 }
