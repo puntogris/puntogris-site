@@ -3,7 +3,7 @@ export default async function getPinnedRepos() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${GITHUB_TOKEN}`,
+      "Authorization": `Bearer ${import.meta.env.GITHUB_TOKEN}`,
     },
     body: JSON.stringify({
       query: `
