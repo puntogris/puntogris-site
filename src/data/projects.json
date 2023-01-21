@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Android",
+    "projects": [
+      {
+        "name": "Posture Reminder",
+        "description": "Posture reminder app for Android.",
+        "url": "https://github.com/puntogris/posture-reminder"
+      },
+      {
+        "name": "Blint",
+        "description": "Open source stock & inventory manager for Android.",
+        "url": "https://github.com/puntogris/blint"
+      },
+      {
+        "name": "Smart wear",
+        "description": "Clothing recommendations based on the weather for Android.",
+        "url": "https://github.com/puntogris/smart-wear"
+      },
+      {
+        "name": "Are you a robot?",
+        "description": "Game made with Kotlin and Firebase.",
+        "url": "https://github.com/puntogris/are-you-a-robot"
+      },
+      {
+        "name": "Dog breed camera",
+        "description": "App that detects the breed of a dog using the camera with machine learning.",
+        "url": "https://github.com/puntogris/dog-breed-camera"
+      }
+    ]
+  },
+  {
+    "name": "Web",
+    "projects": [
+      {
+        "name": "Puntogris site",
+        "description": "Personal web made with Astro and Tailwind.",
+        "url": "https://github.com/puntogris/puntogris-site"
+      },
+      {
+        "name": "Puntogris blog",
+        "description": "Personal blog made with Hugo.",
+        "url": "https://github.com/puntogris/puntogris-blog"
+      }
+    ]
+  },
+  {
+    "name": "Others",
+    "projects": [
+      {
+        "name": "Bubble vibes",
+        "description": "Chat overlay for twitch made with Kotlin multiplatform.",
+        "url": "https://github.com/puntogris/bubble-vibes"
+      },
+      {
+        "name": "Android dev vault",
+        "description": "Compilation of snippet of code that i find myself using a lot in projects.",
+        "url": "https://github.com/puntogris/android-dev-vault"
+      }
+    ]
+  }
+]
