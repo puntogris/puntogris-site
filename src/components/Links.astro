@@ -1,4 +1,4 @@
-<ul class="text-gray-300 text-sm">
+<ul class="text-sm text-gray-300">
   <li class="flex items-center">
     <svg
       aria-hidden="true"
@@ -17,7 +17,7 @@
     </svg>
     <span class="ml-2">Santa Fe, Argentina</span>
   </li>
-  <li class="flex items-center mt-1">
+  <li class="mt-1 flex items-center">
     <svg
       aria-hidden="true"
       focusable="false"
@@ -37,9 +37,9 @@
       id="date-time-element"
       href="https://time.is/UTC-3"
       target="_blank"
-      class="hover:text-blue-400 hover:underline ml-2 normal-case"></a>
+      class="ml-2 normal-case hover:text-blue-400 hover:underline"></a>
   </li>
-  <li class="flex items-center mt-1">
+  <li class="mt-1 flex items-center">
     <svg
       aria-hidden="true"
       focusable="false"
@@ -55,11 +55,13 @@
       >
       </path>
     </svg>
-    <a href="mailto:dev@puntogris.com" target="_blank" class="hover:text-blue-400 hover:underline ml-2"
-      >dev@puntogris.com</a
+    <a
+      href="mailto:dev@puntogris.com"
+      target="_blank"
+      class="ml-2 hover:text-blue-400 hover:underline">dev@puntogris.com</a
     >
   </li>
-  <li class="flex items-center mt-1">
+  <li class="mt-1 flex items-center">
     <svg
       aria-hidden="true"
       focusable="false"
@@ -75,14 +77,15 @@
       >
       </path>
     </svg>
-    <a href="https://github.com/puntogris.gpg" target="_blank" class="hover:text-blue-400 hover:underline ml-2"
-      >133B 4854 7D05 31A4</a
+    <a
+      href="https://github.com/puntogris.gpg"
+      target="_blank"
+      class="ml-2 hover:text-blue-400 hover:underline">133B 4854 7D05 31A4</a
     >
   </li>
 </ul>
 
 <script>
-
   function getArgentinaDateTime() {
     try {
       const date = new Date().toLocaleTimeString("en-US", {

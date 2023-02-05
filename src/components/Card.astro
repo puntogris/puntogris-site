@@ -5,11 +5,11 @@ const { project } = Astro.props;
 <a
   href={project.url}
   target="_blank"
-  class="py-2 px-4 border rounded-md button_background hover:bg-gray-600 hover:bg-opacity-40"
+  class="button_background rounded-md border py-2 px-4 hover:bg-gray-600 hover:bg-opacity-40"
 >
   <div>
-    <p class="text-blue-400 font-bold">{project.name}</p>
-    <p class="text-gray-400 text-sm mt-2">{project.description}</p>
+    <p class="font-bold text-blue-400">{project.name}</p>
+    <p class="mt-2 text-sm text-gray-400">{project.description}</p>
   </div>
 </a>
 
