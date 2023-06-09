@@ -39,7 +39,7 @@
       },
       {
         "name": "Puntogris blog",
-        "description": "Personal blog made with Hugo.",
+        "description": "Personal blog made with Astro.",
         "url": "https://github.com/puntogris/puntogris-blog"
       }
     ]
