@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Geist;
+  font-weight: black;
+  src: url(/public/fonts/Geist-Black.woff2) format("woff2");
+}
+@font-face {
+  font-family: Geist;
+  font-weight: bold;
+  src: url(/public/fonts/Geist-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: Geist;
+  font-weight: black;
+  src: url(/public/fonts/Geist-Regular.woff2) format("woff2");
+}
