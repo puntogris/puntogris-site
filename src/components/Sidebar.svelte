@@ -1,9 +1,9 @@
-<script>
-  export let showIfPosible;
-  export let pathname;
-  export let isSmallerThanLG;
-  
-  let sidebarStyle;
+<script lang="ts">
+  export let showIfPosible: boolean;
+  export let pathname: string;
+  export let isSmallerThanLG: boolean;
+
+  let sidebarStyle: string | null;
 
   $: {
     if (showIfPosible && isSmallerThanLG) {
@@ -17,7 +17,7 @@
     }
   }
 
-  function getMenuItemStyle(isActive) {
+  function getMenuItemStyle(isActive: boolean) {
     if (isActive) {
       return "relative rounded-md bg-gray-700 bg-opacity-30 px-2 py-1.5 text-sm flex items-center gap-x-2 text-white before:absolute before:-left-2 before:top-1/2 before:h-6 before:w-1 before:-translate-y-1/2 before:rounded before:bg-blue-500 hover:bg-gray-800";
     } else {
@@ -76,7 +76,10 @@
         </svg>
         Home
       </a>
-      <a class={getMenuItemStyle(pathname === "/projects")} href="/projects">
+      <a
+        class={getMenuItemStyle(pathname.includes("/projects"))}
+        href="/projects"
+      >
         <svg
           aria-hidden="true"
           focusable="false"
