@@ -6,6 +6,12 @@
   let width;
   $: showIfPosible = false;
   $: isSmallerThanLG = width <= 1024;
+
+  $: {
+    if (!isSmallerThanLG && showIfPosible) {
+      showIfPosible = false;
+    }
+  }
 </script>
 
 <svelte:window bind:innerWidth={width} />
