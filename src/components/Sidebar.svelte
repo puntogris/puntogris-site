@@ -20,20 +20,33 @@
 
 {#if sidebarStyle}
   <div class={sidebarStyle}>
-    <a
-      class="border-b border-gray-700 p-2 text-xl font-bold text-white"
-      href="/"
-      >Puntogris
-
+    <div
+      class="flex flex-row items-center justify-between border-b border-gray-700 p-2"
+    >
+      <a class="text-xl font-bold text-white" href="/">Puntogris </a>
       {#if isSmallerThanLG}
         <button
           on:click={() => (showIfPosible = !showIfPosible)}
-          class="text-white"
+          class="text-gray-400 p-1 hover:bg-gray-800 rounded-md"
         >
-          close
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
         </button>
       {/if}
-    </a>
+    </div>
 
     <nav class="flex flex-col px-4 py-3">
       {#if pathname === "/"}
