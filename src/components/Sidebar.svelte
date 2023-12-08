@@ -2,13 +2,13 @@
   export let showIfPosible;
   export let pathname;
   export let isSmallerThanLG;
-
+  
   let sidebarStyle;
 
   $: {
     if (showIfPosible && isSmallerThanLG) {
       sidebarStyle =
-        "bg-gray-900 fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 before:absolute before:left-64 before:top-1/2 before:h-full before:w-screen before:-translate-y-1/2 before:bg-gray-400 before:bg-opacity-30";
+        "bg-dark-blue shadow-2xl shadow-black fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 before:absolute before:left-64 before:top-1/2 before:h-full before:w-screen before:-translate-y-1/2 before:bg-gray-400 before:bg-opacity-20";
     } else if (isSmallerThanLG) {
       sidebarStyle = null;
     } else {
@@ -29,7 +29,7 @@
 {#if sidebarStyle}
   <div class={sidebarStyle}>
     <div
-      class="flex flex-row items-center justify-between border-b border-gray-700 p-2"
+      class="flex shadow flex-row items-center justify-between border-b border-gray-700 p-2"
     >
       <a class="text-xl font-bold text-white" href="/">Puntogris </a>
       {#if isSmallerThanLG}
