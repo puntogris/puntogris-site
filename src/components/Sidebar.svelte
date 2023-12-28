@@ -103,16 +103,19 @@
       <a
         class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
         href="https://github.com/puntogris"
+        target="_blank"
         >Github <span class="text-xs text-gray-500">@puntogris</span></a
       >
       <a
         class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
-        href="/"
+        href="https://twitter.com/joacojk"
+        target="_blank"
         >Twitter <span class="text-xs text-gray-500">@puntogris</span></a
       >
       <a
         class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
-        href="/">Google <span class="text-xs text-gray-500">@puntogris</span></a
+        href="https://play.google.com/store/apps/dev?id=9215074992728346327&hl=en&gl=US"
+        >Google Play<span class="text-xs text-gray-500">@puntogris</span></a
       >
     </nav>
     <div
