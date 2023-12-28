@@ -43,9 +43,9 @@
   <li class="mt-1 flex items-center">
     <MailBorderIcon />
     <a
-      href="mailto:dev@puntogris.com"
+      href="mailto:puntogrisdev@gmail.com"
       target="_blank"
-      class="ml-2 hover:text-blue-400 hover:underline">dev@puntogris.com</a
+      class="ml-2 hover:text-blue-400 hover:underline">puntogrisdev@gmail.com</a
     >
   </li>
   <li class="mt-1 flex items-center">
