@@ -34,7 +34,7 @@
 </script>
 
 {#if sidebarStyle}
-  <div class={sidebarStyle}>
+  <aside class={sidebarStyle}>
     <div
       class="flex shadow flex-row items-center justify-between border-b border-gray-700 p-2"
     >
@@ -95,5 +95,5 @@
         class="hover:text-blue-400">Inspired by Baoshuo</a
       >
     </div>
-  </div>
+  </aside>
 {/if}
