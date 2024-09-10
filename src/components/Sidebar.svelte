@@ -44,7 +44,7 @@
           on:click={() => (showIfPosible = !showIfPosible)}
           class="text-gray-400 p-1 hover:bg-gray-800 rounded-md"
         >
-         <XIcon />
+          <XIcon />
         </button>
       {/if}
     </div>
@@ -90,9 +90,9 @@
     <div
       class="mt-auto border-t border-gray-700 px-4 py-2 text-center text-sm text-gray-500"
     >
-      Copyright © 2024 Puntogris <a
-        href="https://baoshuo.ren"
-        class="hover:text-blue-400">Inspired by Baoshuo</a
+      Copyright © 2024 Puntogris
+      <a href="https://baoshuo.ren" class="hover:text-blue-400"
+        >Inspired by Baoshuo</a
       >
     </div>
   </aside>

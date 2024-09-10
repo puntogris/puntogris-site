@@ -26,11 +26,11 @@
           on:click={() => (showIfPosible = !showIfPosible)}
           class="block rounded-md text-gray-400 hover:bg-gray-800 p-1.5"
         >
-         <MenuIcon size={20} />
+          <MenuIcon size={20} />
         </button>
       {/if}
     </div>
-    <div class="container mx-auto min-h-screen max-w-3xl px-0 lg:px-4">
+    <div class="container mx-auto max-w-3xl px-0 lg:px-4">
       <slot />
     </div>
   </div>

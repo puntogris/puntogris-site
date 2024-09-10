@@ -26,13 +26,13 @@
   }, 1000);
 </script>
 
-<ul class="text-sm text-gray-100">
+<ul class="text-sm text-gray-100 space-y-0.5">
   <li class="flex items-center">
-    <LocationBorderIcon />
+    <LocationBorderIcon size={14} />
     <span class="ml-2">Santa Fe, Argentina</span>
   </li>
-  <li class="mt-1 flex items-center">
-    <ClockBorderIcon />
+  <li class="flex items-center">
+    <ClockBorderIcon size={14} />
     <a
       id="date-time-element"
       href="https://time.is/UTC-3"
@@ -40,16 +40,16 @@
       class="ml-2 normal-case hover:text-blue-400 hover:underline">{date}</a
     >
   </li>
-  <li class="mt-1 flex items-center">
-    <MailBorderIcon />
+  <li class="flex items-center">
+    <MailBorderIcon size={14} />
     <a
       href="mailto:puntogrisdev@gmail.com"
       target="_blank"
       class="ml-2 hover:text-blue-400 hover:underline">puntogrisdev@gmail.com</a
     >
   </li>
-  <li class="mt-1 flex items-center">
-    <KeyBorderIcon />
+  <li class="flex items-center">
+    <KeyBorderIcon size={14} />
     <a
       href="https://github.com/puntogris.gpg"
       target="_blank"
