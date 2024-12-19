@@ -1,6 +1,6 @@
 <script>
-	import Sidebar from './Sidebar.svelte';
-	import MenuIcon from './icons/MenuIcon.svelte';
+	import Sidebar from '../components/Sidebar.svelte';
+	import MenuIcon from '../components/icons/MenuIcon.svelte';
 
 	export let pathname;
 
@@ -19,12 +19,12 @@
 
 <body class="flex min-h-screen w-full flex-row">
 	<Sidebar {pathname} {isSmallerThanLG} bind:showIfPosible />
-	<div class="ml-0 w-full lg:ml-64 py-2 px-3">
+	<div class="ml-0 w-full px-3 py-2 lg:ml-64">
 		<div class="flex h-10 items-center">
 			{#if isSmallerThanLG}
 				<button
 					on:click={() => (showIfPosible = !showIfPosible)}
-					class="block rounded-md text-gray-400 hover:bg-gray-800 p-1.5"
+					class="block rounded-md p-1.5 text-gray-400 hover:bg-gray-800"
 				>
 					<MenuIcon size={20} />
 				</button>

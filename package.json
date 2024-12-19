@@ -18,8 +18,9 @@
     "tailwindcss": "latest"
   },
   "devDependencies": {
-    "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.8.1",
-    "prettier-plugin-tailwindcss": "^0.2.8"
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^3.3.2",
+    "prettier-plugin-tailwindcss": "0.6.9"
   }
 }
