@@ -1,59 +1,59 @@
 ---
-import Links from "./Links.svelte";
-import GithubFilledIcon from "./icons/GithubFilledIcon.svelte";
-import GooglePlayFilledicon from "./icons/GooglePlayFilled.svelte";
-import BookBorderIcon from "./icons/BookBorderIcon.svelte";
+import Links from './Links.svelte';
+import GithubFilledIcon from './icons/GithubFilledIcon.svelte';
+import GooglePlayFilledicon from './icons/GooglePlayFilled.svelte';
+import BookBorderIcon from './icons/BookBorderIcon.svelte';
 ---
 
 <section class="mt-3 border-b border-gray-700 pb-4">
-  <div class="flex flex-wrap items-end justify-between gap-2 px-4 md:px-0">
-    <div>
-      <h1 class="text-3xl font-semibold text-gray-100">Hello,</h1>
-      <h2 class="text-4xl font-semibold text-gray-100">
-        I'm <mark class="half_background text-blue-400">Joaquin</mark>
-      </h2>
-      <div class="mt-4 text-gray-500">Developer / Ambitious / Curious</div>
-    </div>
-    <Links client:load />
-  </div>
+	<div class="flex flex-wrap items-end justify-between gap-2 px-4 md:px-0">
+		<div>
+			<h1 class="text-3xl font-semibold text-gray-100">Hello,</h1>
+			<h2 class="text-4xl font-semibold text-gray-100">
+				I'm <mark class="half_background text-blue-400">Joaquin</mark>
+			</h2>
+			<div class="mt-4 text-gray-500">Developer / Ambitious / Curious</div>
+		</div>
+		<Links client:load />
+	</div>
 
-  <div class="mt-2 px-4 md:px-0">
-    <a
-      href="https://blog.puntogris.com/"
-      target="_blank"
-      class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
-    >
-      <BookBorderIcon />
-      <span class="ml-1.5">Blog</span></a
-    >
-    <a
-      href="https://play.google.com/store/apps/dev?id=9215074992728346327"
-      target="_blank"
-      class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
-    >
-      <GooglePlayFilledicon />
-      <span class="ml-1">Play Store</span></a
-    >
-    <a
-      href="https://github.com/puntogris"
-      target="_blank"
-      class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
-    >
-      <GithubFilledIcon />
-      <span class="ml-1">Github</span></a
-    >
-  </div>
+	<div class="mt-2 px-4 md:px-0">
+		<a
+			href="https://blog.puntogris.com/"
+			target="_blank"
+			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+		>
+			<BookBorderIcon />
+			<span class="ml-1.5">Blog</span></a
+		>
+		<a
+			href="https://play.google.com/store/apps/dev?id=9215074992728346327"
+			target="_blank"
+			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+		>
+			<GooglePlayFilledicon />
+			<span class="ml-1">Play Store</span></a
+		>
+		<a
+			href="https://github.com/puntogris"
+			target="_blank"
+			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+		>
+			<GithubFilledIcon />
+			<span class="ml-1">Github</span></a
+		>
+	</div>
 </section>
 
 <style>
-  .half_background {
-    background: linear-gradient(transparent 75%, rgba(56, 139, 253, 0.4) 0px);
-  }
-  .button_background {
-    border: 1px solid rgba(240, 246, 252, 0.1);
-    background-color: rgb(33 38 45);
-  }
-  .flex_container {
-    -moz-box-pack: justify;
-  }
+	.half_background {
+		background: linear-gradient(transparent 75%, rgba(56, 139, 253, 0.4) 0px);
+	}
+	.button_background {
+		border: 1px solid rgba(240, 246, 252, 0.1);
+		background-color: rgb(33 38 45);
+	}
+	.flex_container {
+		-moz-box-pack: justify;
+	}
 </style>

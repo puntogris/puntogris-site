@@ -3,18 +3,18 @@ const { project } = Astro.props;
 ---
 
 <a
-  href={project.url}
-  target="_blank"
-  class="button_background rounded-md border py-2 px-4 hover:bg-gray-600 hover:bg-opacity-40"
+	href={project.url}
+	target="_blank"
+	class="button_background rounded-md border px-4 py-2 hover:bg-gray-600 hover:bg-opacity-40"
 >
-  <div>
-    <p class="font-bold text-blue-400">{project.name}</p>
-    <p class="mt-2 text-sm text-gray-400">{project.description}</p>
-  </div>
+	<div>
+		<p class="font-bold text-blue-400">{project.name}</p>
+		<p class="mt-2 text-sm text-gray-400">{project.description}</p>
+	</div>
 </a>
 
 <style>
-  .button_background {
-    border: 1px solid rgb(48, 54, 61);
-  }
+	.button_background {
+		border: 1px solid rgb(48, 54, 61);
+	}
 </style>
