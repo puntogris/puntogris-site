@@ -48,14 +48,14 @@
 		"name": "Others",
 		"projects": [
 			{
+				"name": "Telescope plugin",
+				"description": "Android Studio plugin for AI-driven drawable search.",
+				"url": "https://github.com/puntogris/telescope"
+			},
+			{
 				"name": "Bubble vibes",
 				"description": "Chat overlay for twitch made with Kotlin multiplatform.",
 				"url": "https://github.com/puntogris/bubble-vibes"
-			},
-			{
-				"name": "Android dev vault",
-				"description": "Compilation of snippet of code that i find myself using a lot in projects.",
-				"url": "https://github.com/puntogris/android-dev-vault"
 			}
 		]
 	}
