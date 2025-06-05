@@ -33,14 +33,24 @@
 		"name": "Web",
 		"projects": [
 			{
-				"name": "Puntogris site",
-				"description": "Personal web made with Astro and Tailwind.",
-				"url": "https://github.com/puntogris/puntogris-site"
+				"name": "Retratos",
+				"description": "Portraits images and videos generation using AI.",
+				"url": "https://retratos.co"
 			},
 			{
 				"name": "Puntogris blog",
 				"description": "Personal blog made with Astro.",
 				"url": "https://github.com/puntogris/puntogris-blog"
+			},
+			{
+				"name": "Draw",
+				"description": "Exalidraw clone for personal use.",
+				"url": "https://github.com/puntogris/draw"
+			},
+			{
+				"name": "Send",
+				"description": "Based on Firefox Send, allows file sharing in short lived links.",
+				"url": "https://github.com/puntogris/send"
 			}
 		]
 	},

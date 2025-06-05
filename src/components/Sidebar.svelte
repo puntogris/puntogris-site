@@ -83,7 +83,7 @@
 			>
 		</nav>
 		<div class="mt-auto border-t border-gray-700 px-4 py-2 text-center text-sm text-gray-500">
-			Copyright © 2024 Puntogris
+			Copyright © 2025 Puntogris
 		</div>
 	</aside>
 {/if}
