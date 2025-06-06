@@ -5,7 +5,7 @@
 	import GooglePlayFilled from '../components/icons/GooglePlayFilled.svelte';
 	import HomeBorderIcon from '../components/icons/HomeBorderIcon.svelte';
 	import XIcon from '../components/icons/XIcon.svelte';
-	import TwitterFilledIcon from '../components/icons/TwitterFilledIcon.svelte';
+	import LinkedinIcon from '../components/icons/LinkedinIcon.svelte';
 	import { twMerge } from 'tailwind-merge';
 
 	export let pathname: string;
@@ -92,18 +92,18 @@
 				>
 				<a
 					class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
-					href="https://twitter.com/joacojk"
-					target="_blank"
-				>
-					<TwitterFilledIcon class="size-4 text-gray-400" />
-					Twitter <span class="text-xs text-gray-500">@puntogris</span></a
-				>
-				<a
-					class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
 					href="https://play.google.com/store/apps/dev?id=9215074992728346327&hl=en&gl=US"
 				>
 					<GooglePlayFilled class="size-4 text-gray-400" />
 					Google Play<span class="text-xs text-gray-500">@puntogris</span></a
+				>
+				<a
+					class="flex items-center gap-x-2.5 rounded px-2 py-1.5 text-sm text-white hover:bg-gray-800"
+					href="https://www.linkedin.com/in/joaquin-mu%C3%B1iz/"
+					target="_blank"
+				>
+					<LinkedinIcon class="size-4 text-gray-400" />
+					Linkedin <span class="text-xs text-gray-500">@joaquin-muñiz</span></a
 				>
 			</nav>
 			<div class="mt-auto border-t border-gray-700 px-4 py-2 text-center text-sm text-gray-500">
