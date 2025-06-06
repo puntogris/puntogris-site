@@ -21,7 +21,7 @@ import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
 							<a
 								href={project.url}
 								target="_blank"
-								class="button_background hover:bg-opacity-40 rounded-md border px-4 py-2 hover:bg-gray-600"
+								class="rounded-md border border-gray-700 px-4 py-2 hover:bg-gray-600/20"
 							>
 								<div>
 									<p class="font-bold text-blue-400">{project.name}</p>
@@ -35,9 +35,3 @@ import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
 		}
 	</div>
 </RootLayout>
-
-<style>
-	.button_background {
-		border: 1px solid rgb(48, 54, 61);
-	}
-</style>

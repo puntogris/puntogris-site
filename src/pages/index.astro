@@ -1,13 +1,93 @@
 ---
-import About from '../components/About.astro';
-import Hello from '../components/Hello.astro';
 import RootLayout from '../layouts/RootLayout.astro';
-import Description from '../components/Description.astro';
+import Links from '../components/Links.svelte';
+import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
+import GooglePlayFilledicon from '../components/icons/GooglePlayFilled.svelte';
+import BookBorderIcon from '../components/icons/BookBorderIcon.svelte';
 ---
 
 <RootLayout title="Puntogris">
-	<div class="mt-2"></div>
-	<Hello />
-	<Description />
-	<About />
+	<section class="mt-3 border-b border-gray-700 pb-4">
+		<div class="flex flex-wrap items-end justify-between gap-2 px-4 md:px-0">
+			<div>
+				<h1 class="text-3xl font-semibold text-gray-100">Hello,</h1>
+				<h2 class="text-4xl font-semibold text-gray-100">
+					I'm <span
+						class="bg-[linear-gradient(transparent_75%,theme(colors.blue.400)_150%_0px)] text-blue-400"
+						>Joaquin</span
+					>
+				</h2>
+				<div class="mt-4 text-gray-500">Developer / Ambitious / Curious</div>
+			</div>
+			<Links client:load />
+		</div>
+
+		<div class="mt-4 flex items-center gap-2 px-4 md:px-0">
+			<a
+				href="https://blog.puntogris.com/"
+				target="_blank"
+				class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
+			>
+				<BookBorderIcon class="size-3.5 text-gray-400" />
+				Blog
+			</a>
+			<a
+				href="https://play.google.com/store/apps/dev?id=9215074992728346327"
+				target="_blank"
+				class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
+			>
+				<GooglePlayFilledicon class="size-3.5 text-gray-400" />
+				Play Store
+			</a>
+			<a
+				href="https://github.com/puntogris"
+				target="_blank"
+				class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
+			>
+				<GithubFilledIcon class="size-3.5 text-gray-400" />
+				Github
+			</a>
+		</div>
+	</section>
+
+	<section class="mt-2 flex flex-col px-4 text-gray-100 md:px-0">
+		<ul role="list" class="mt-4 list-disc space-y-1 pl-9 marker:text-gray-300">
+			<li>
+				Android developer at <a
+					href="http://www.brubank.com"
+					target="_blank"
+					class="text-blue-400 hover:underline">Brubank</a
+				>
+			</li>
+			<li>Open source advocate</li>
+			<li>Lover of 🥐 🎧 🎾 🐶 🎮</li>
+			<li>and more...</li>
+		</ul>
+	</section>
+
+	<section class="mt-6 flex flex-col gap-4 px-4 pb-4 text-gray-100 md:px-0">
+		<h1 class="text-2xl font-semibold">About Me</h1>
+		<p>
+			I'm Joaquin, a developer who's always been fascinated by how computers work and what we can
+			create with code. This curiosity has pushed me to build a bunch of apps, mostly for mobile
+			devices.
+		</p>
+		<p>
+			I also have a strong interest in machine learning, having trained my own models and even
+			implemented them in one of my apps. (<a
+				class="text-blue-400 hover:underline"
+				href="https://github.com/puntogris/dog-breed-camera"
+				target="_blank">details</a
+			>)
+		</p>
+		<p>
+			Right now, I’m diving deeper into web development, constantly picking up new skills. I’m also
+			big on open-source, contributing whenever I can because I love the idea of collaborating and
+			sharing knowledge.
+		</p>
+		<p>
+			When I’m not coding, you’ll usually find me with my headphones on, lost in music, hitting the
+			tennis court, or getting stuck into a good book.
+		</p>
+	</section>
 </RootLayout>
