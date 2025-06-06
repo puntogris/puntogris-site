@@ -15,7 +15,9 @@
     "@astrojs/vercel": "latest",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "latest",
-    "tailwindcss": "latest"
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "latest",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "prettier": "^3.5.3",

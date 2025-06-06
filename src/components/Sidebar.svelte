@@ -5,36 +5,33 @@
 	import HomeBorderIcon from './icons/HomeBorderIcon.svelte';
 	import XIcon from './icons/XIcon.svelte';
 	import TwitterFilledIcon from './icons/TwitterFilledIcon.svelte';
+	import { twMerge } from 'tailwind-merge';
 
 	export let showIfPosible: boolean;
 	export let pathname: string;
 	export let isSmallerThanLG: boolean;
 
-	let sidebarStyle: string | null;
+	let sidebarState: 'fixed' | 'hidden' | 'drawer' = 'fixed';
 
 	$: {
 		if (showIfPosible && isSmallerThanLG) {
-			sidebarStyle =
-				'bg-dark-blue shadow-2xl shadow-black fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 before:absolute before:left-64 before:top-1/2 before:h-full before:w-screen before:-translate-y-1/2 before:bg-gray-400 before:opacity-20';
+			sidebarState = 'drawer';
 		} else if (isSmallerThanLG) {
-			sidebarStyle = null;
+			sidebarState = 'hidden';
 		} else {
-			sidebarStyle =
-				'fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 max-lg:hidden';
-		}
-	}
-
-	function getMenuItemStyle(isActive: boolean) {
-		if (isActive) {
-			return 'relative rounded-md bg-gray-700/30 px-2 py-1.5 text-sm flex items-center gap-x-2 text-white before:absolute before:-left-2 before:top-1/2 before:h-6 before:w-1 before:-translate-y-1/2 before:rounded before:bg-blue-500 hover:bg-gray-800';
-		} else {
-			return 'relative rounded-md px-2 py-1.5 text-sm text-white flex items-center gap-x-2 hover:bg-gray-800';
+			sidebarState = 'fixed';
 		}
 	}
 </script>
 
-{#if sidebarStyle}
-	<aside class={sidebarStyle}>
+{#if sidebarState !== 'hidden'}
+	<aside
+		class={twMerge(
+			sidebarState === 'drawer'
+				? 'bg-dark-blue fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 shadow-2xl shadow-black before:absolute before:top-1/2 before:left-64 before:h-full before:w-screen before:-translate-y-1/2 before:bg-gray-400 before:opacity-20'
+				: 'fixed flex min-h-screen w-64 shrink-0 flex-col border-r border-gray-700 max-lg:hidden'
+		)}
+	>
 		<div class="flex flex-row items-center justify-between border-b border-gray-700 p-2 shadow">
 			<a class="text-xl font-bold text-white" href="/">Puntogris </a>
 			{#if isSmallerThanLG}
@@ -48,11 +45,27 @@
 		</div>
 
 		<nav class="flex flex-col px-4 py-3">
-			<a class={getMenuItemStyle(pathname === '/')} href="/">
+			<a
+				class={twMerge(
+					'relative flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-white hover:bg-gray-800',
+					pathname === '/'
+						? 'bg-gray-700/30 before:absolute before:top-1/2 before:-left-2 before:h-6 before:w-1 before:-translate-y-1/2 before:rounded before:bg-blue-500 hover:bg-gray-800'
+						: ''
+				)}
+				href="/"
+			>
 				<HomeBorderIcon class="size-4 text-gray-400" />
 				Home
 			</a>
-			<a class={getMenuItemStyle(pathname.includes('/projects'))} href="/projects">
+			<a
+				class={twMerge(
+					'relative flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-white hover:bg-gray-800',
+					pathname.includes('/projects')
+						? 'bg-gray-700/30 before:absolute before:top-1/2 before:-left-2 before:h-6 before:w-1 before:-translate-y-1/2 before:rounded before:bg-blue-50'
+						: ''
+				)}
+				href="/projects"
+			>
 				<CodeIcon class="size-4 text-gray-400" />
 				Projects
 			</a>
