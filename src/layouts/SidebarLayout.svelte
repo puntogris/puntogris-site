@@ -26,7 +26,7 @@
 					on:click={() => (showIfPosible = !showIfPosible)}
 					class="block rounded-md p-1.5 text-gray-400 hover:bg-gray-800"
 				>
-					<MenuIcon size={20} />
+					<MenuIcon class="size-5 text-gray-400" />
 				</button>
 			{/if}
 		</div>

@@ -28,11 +28,11 @@
 
 <ul class="space-y-0.5 text-sm text-gray-100">
 	<li class="flex items-center">
-		<LocationBorderIcon size={14} />
+		<LocationBorderIcon class="size-3.5 text-gray-400" />
 		<span class="ml-2">Santa Fe, Argentina</span>
 	</li>
 	<li class="flex items-center">
-		<ClockBorderIcon size={14} />
+		<ClockBorderIcon class="size-3.5 text-gray-400" />
 		<a
 			id="date-time-element"
 			href="https://time.is/UTC-3"
@@ -41,7 +41,7 @@
 		>
 	</li>
 	<li class="flex items-center">
-		<MailBorderIcon size={14} />
+		<MailBorderIcon class="size-3.5 text-gray-400" />
 		<a
 			href="mailto:puntogrisdev@gmail.com"
 			target="_blank"
@@ -49,7 +49,7 @@
 		>
 	</li>
 	<li class="flex items-center">
-		<KeyBorderIcon size={14} />
+		<KeyBorderIcon class="size-3.5 text-gray-400" />
 		<a
 			href="https://github.com/puntogris.gpg"
 			target="_blank"

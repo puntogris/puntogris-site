@@ -24,10 +24,4 @@ const pathname = Astro.url.pathname;
 	<SidebarLayout {pathname} client:load>
 		<slot />
 	</SidebarLayout>
-
-	<style is:global>
-		:root {
-			--accent: 124, 58, 237;
-		}
-	</style>
 </html>

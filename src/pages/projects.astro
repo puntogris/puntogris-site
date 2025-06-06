@@ -5,23 +5,23 @@ import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
 ---
 
 <PageLayout title="Puntogris - Projects">
-	<div class="px-4 pb-5 pt-4 md:px-0">
+	<div class="px-4 pt-4 pb-5 md:px-0">
 		<div class="flex justify-between">
 			<p class="text-3xl font-bold text-gray-300">Projects</p>
 			<a href="https://github.com/puntogris">
-				<GithubFilledIcon size={24} />
+				<GithubFilledIcon class="size-6 text-gray-400" />
 			</a>
 		</div>
 		{
 			sectionsData.map((section) => (
-				<div class="mb-4 mt-2">
+				<div class="mt-2 mb-4">
 					<p class="font text-xl text-gray-400">{section.name}</p>
 					<div class="mt-3 grid grid-cols-1 gap-4 md:grid-cols-2">
 						{section.projects.map((project) => (
 							<a
 								href={project.url}
 								target="_blank"
-								class="button_background rounded-md border px-4 py-2 hover:bg-gray-600 hover:bg-opacity-40"
+								class="button_background hover:bg-opacity-40 rounded-md border px-4 py-2 hover:bg-gray-600"
 							>
 								<div>
 									<p class="font-bold text-blue-400">{project.name}</p>

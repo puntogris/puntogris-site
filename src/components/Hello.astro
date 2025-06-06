@@ -17,40 +17,36 @@ import BookBorderIcon from './icons/BookBorderIcon.svelte';
 		<Links client:load />
 	</div>
 
-	<div class="mt-2 px-4 md:px-0">
+	<div class="mt-4 flex items-center gap-2 px-4 md:px-0">
 		<a
 			href="https://blog.puntogris.com/"
 			target="_blank"
-			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+			class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
 		>
-			<BookBorderIcon />
-			<span class="ml-1.5">Blog</span></a
-		>
+			<BookBorderIcon class="size-3.5 text-gray-400" />
+			Blog
+		</a>
 		<a
 			href="https://play.google.com/store/apps/dev?id=9215074992728346327"
 			target="_blank"
-			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+			class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
 		>
-			<GooglePlayFilledicon />
-			<span class="ml-1">Play Store</span></a
-		>
+			<GooglePlayFilledicon class="size-3.5 text-gray-400" />
+			Play Store
+		</a>
 		<a
 			href="https://github.com/puntogris"
 			target="_blank"
-			class="button_background ml-1 mt-2 inline-block rounded-md px-4 py-1.5 text-sm font-medium leading-tight text-gray-300 transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0"
+			class="bg-dark-blue-secondary border-dark-blue-border flex items-center gap-2 rounded-md border px-4 py-1.5 text-sm leading-tight font-medium text-gray-300 hover:opacity-80"
 		>
-			<GithubFilledIcon />
-			<span class="ml-1">Github</span></a
-		>
+			<GithubFilledIcon class="size-3.5 text-gray-400" />
+			Github
+		</a>
 	</div>
 </section>
 
 <style>
 	.half_background {
 		background: linear-gradient(transparent 75%, rgba(56, 139, 253, 0.4) 0px);
-	}
-	.button_background {
-		border: 1px solid rgba(240, 246, 252, 0.1);
-		background-color: rgb(33 38 45);
 	}
 </style>

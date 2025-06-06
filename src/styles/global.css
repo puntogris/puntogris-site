@@ -3,6 +3,9 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-dark-blue: #0d1117;
 	--default-font-family: 'Inter', var(--font-sans);
+
+	--color-dark-blue: #0d1117;
+	--color-dark-blue-secondary: #21262d;
+	--color-dark-blue-border: #f0f6fc1a;
 }
