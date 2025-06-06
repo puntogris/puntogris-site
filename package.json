@@ -14,13 +14,14 @@
     "@astrojs/svelte": "^5.7.3",
     "@astrojs/tailwind": "latest",
     "@astrojs/vercel": "latest",
+    "@lucide/astro": "^0.513.0",
     "astro": "latest",
     "tailwindcss": "latest"
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-svelte": "^3.3.2",
+    "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "0.6.9"
   }
 }
