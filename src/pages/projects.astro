@@ -1,10 +1,10 @@
 ---
 import sectionsData from '../data/projects.json';
-import PageLayout from '../layouts/PageLayout.astro';
+import RootLayout from '../layouts/RootLayout.astro';
 import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
 ---
 
-<PageLayout title="Puntogris - Projects">
+<RootLayout title="Puntogris - Projects">
 	<div class="px-4 pt-4 pb-5 md:px-0">
 		<div class="flex justify-between">
 			<p class="text-3xl font-bold text-gray-300">Projects</p>
@@ -34,7 +34,7 @@ import GithubFilledIcon from '../components/icons/GithubFilledIcon.svelte';
 			))
 		}
 	</div>
-</PageLayout>
+</RootLayout>
 
 <style>
 	.button_background {
